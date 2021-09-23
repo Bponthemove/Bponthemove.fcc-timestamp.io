@@ -23,7 +23,9 @@ module.exports = app => {
           res.json({ error: "Invalid Date" })
         } else {
           const unix = date.getTime()
+          console.log(unix);
           const utc = date.toUTCString()
+          console.log(utc);
           res.json({ unix, utc })
         }
     })
