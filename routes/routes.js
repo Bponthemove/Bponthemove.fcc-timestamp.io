@@ -10,7 +10,7 @@ module.exports = app => {
     })
 
     //user input route
-    app.get("*", function(request, response) {
+    app.get("/api/*", function(request, response) {
         //response.writeHead(200, { "Content-Type": "application/json" });
         const input = request.url.slice(1)
         let date
