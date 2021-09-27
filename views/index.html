@@ -8,86 +8,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
     <title>Timestamp Microservice</title>
-    <style>
-        html, body{
-            height: 100vh;
-            width: 60%;
-            margin: 0px auto;
-            background-color: #e9f5db;
-            font-family: 'Song Myung', serif;
-        }
-
-        h1 h2 h3{
-            letter-spacing: 1px;
-        }
-
-        ol{
-            border: 2px solid #87986a;
-            border-radius: 8px;
-            padding: 30px;
-            padding-top: 0px;
-        }
-
-        .code-container{
-            border: 2px solid #87986a;
-            border-radius: 8px;
-            padding: 10px;
-            padding-top: 0px;
-        }
-
-        .code-container h3{
-            margin-left: 20px;
-        }
-
-        code{
-            background-color: #cfe1b9;
-            border-radius: 8px;
-            padding: 5px;
-        }
-
-        footer{
-            float: right;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Timestamp Microservice</h1>
-    <h2>FCC project</h2>
-    <ol>
-        <h3>User Stories</h3>
-        <li>
-            I can pass a string as a parameter, 
-            and it will check to see whether that string contains either a unix timestamp or 
-            a natural language date (example: January 1, 2016)
-        </li>
-        <li>
-            If it does, it returns both the Unix timestamp and the natural language form of that date.
-        </li>
-        <li>
-            If it does not contain a date or Unix timestamp, it returns null for those properties.
-        </li>
-    </ol>
-    
-    <div class='code-container'>
-        <h3>Example Input</h3>
-        <p>
-            <code>
-                https://(pathway)/api/December%2015,%202015
-            </code>
-            <br>
-            <code>
-                https://(pathway)/api/1451001600000
-            </code>
-        </p>
-        <h3>Example Output</h3>
-        <p>
-            <code>
-                { "unix": 1451001600000, "natural": "Fri, 25 Dec 2015 00:00:00 GMT" }
-            </code>
-        </p>
-    </div>
-    <footer>Sept 2021, Bponthemove</footer>
-    
-</body>
-</html>
+      <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Timestamp Microservice</h1>
+        <h2>FCC project</h2>
+        <ol>
+            <h3>User Stories</h3>
+            <li>
+                I can pass a string as a parameter, 
+                and it will check to see whether that string contains either a unix timestamp or 
+                a natural language date (example: January 1, 2016)
+            </li>
+            <li>
+                If it does, it returns both the Unix timestamp and the natural language form of that date.
+            </li>
+            <li>
+                If it does not contain a date or Unix timestamp, it returns null for those properties.
+            </li>
+        </ol>
+        
+        <div class='code-container'>
+            <h3>Example Input</h3>
+            <p>
+                <code>
+                    https://(pathway)/api/December%2015,%202015
+                </code>
+                <br>
+                <code>
+                    https://(pathway)/api/1451001600000
+                </code>
+            </p>
+            <h3>Example Output</h3>
+            <p>
+                <code>
+                    { "unix": 1451001600000, "natural": "Fri, 25 Dec 2015 00:00:00 GMT" }
+                </code>
+            </p>
+        </div>
+        <footer>Sept 2021, Bponthemove</footer>
+        
+    </body>
+    </html>
