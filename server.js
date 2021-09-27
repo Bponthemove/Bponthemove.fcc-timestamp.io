@@ -7,6 +7,9 @@ const app = express()
 const port = process.env.PORT || 3000
 const routes = require(path.join(process.cwd() + '/routes/routes.js'))
 
+var cors = require('cors');
+app.use(cors({optionsSuccessStatus: 200}))
+
 app.use(express.static(path.join(process.cwd() + '/views')))
 
 routes(app)
